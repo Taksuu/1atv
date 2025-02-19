@@ -1,0 +1,41 @@
+                                <!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Site</title>
+</head>
+<script>
+ function myFunction() {
+  alert("Informações Enviadas");
+}
+
+function b() { alert("Página Atualizada"); 
+  
+}
+</script>
+<body onload="b()">
+  <form >
+    <div>
+    <label for="nome">nome:</label>
+    <input type="text" name="nome">
+   
+      </div>
+    <br>
+    <div>
+        <label for="idade">idade:</label>
+    <input type="text" name="idade">
+   
+      </div>
+    <br>
+    <div>
+        <label for="telefone">telefone:</label>
+    <input placeholder="(xx) xxxxx-xxxx" type="number" name="telefone">
+    </div>
+    <br>
+    <button onclick="myFunction()" type="submit">ok</button>
+      
+    
+  </form>
+</body>
+</html>
