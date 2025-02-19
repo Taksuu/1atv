@@ -13,12 +13,19 @@
 function b() { alert("Página Atualizada"); 
   
 }
+
+  document.getElementById("fname").onchange = function() {myFunction()};
+
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
 </script>
 <body onload="b()">
   <form >
     <div>
     <label for="nome">nome:</label>
-    <input type="text" name="nome">
+    <input id="fname" type="text" name="nome">
    
       </div>
     <br>
